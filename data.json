@@ -1,0 +1,818 @@
+{
+    "location": {
+        "name": "London",
+        "region": "City of London, Greater London",
+        "country": "United Kingdom",
+        "lat": 51.52,
+        "lon": -0.11,
+        "tz_id": "Europe/London",
+        "localtime_epoch": 1675792547,
+        "localtime": "2023-02-07 17:55"
+    },
+    "current": {
+        "last_updated_epoch": 1675791900,
+        "last_updated": "2023-02-07 17:45",
+        "temp_c": 6.0,
+        "temp_f": 42.8,
+        "is_day": 0,
+        "condition": {
+            "text": "Clear",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+            "code": 1000
+        },
+        "wind_mph": 2.2,
+        "wind_kph": 3.6,
+        "wind_degree": 82,
+        "wind_dir": "E",
+        "pressure_mb": 1038.0,
+        "pressure_in": 30.65,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 65,
+        "cloud": 0,
+        "feelslike_c": 5.6,
+        "feelslike_f": 42.2,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 1.0
+    },
+    "forecast": {
+        "forecastday": [
+            {
+                "date": "2023-02-07",
+                "date_epoch": 1675728000,
+                "day": {
+                    "maxtemp_c": 11.0,
+                    "maxtemp_f": 51.8,
+                    "mintemp_c": 2.6,
+                    "mintemp_f": 36.7,
+                    "avgtemp_c": 5.9,
+                    "avgtemp_f": 42.7,
+                    "maxwind_mph": 3.8,
+                    "maxwind_kph": 6.1,
+                    "totalprecip_mm": 0.0,
+                    "totalprecip_in": 0.0,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 10.0,
+                    "avgvis_miles": 6.0,
+                    "avghumidity": 69.0,
+                    "daily_will_it_rain": 0,
+                    "daily_chance_of_rain": 0,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Sunny",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                        "code": 1000
+                    }
+                },
+                "astro": {
+                    "is_moon_up": 1,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    }
+                ]
+            },
+            {
+                "date": "2023-02-08",
+                "date_epoch": 1675814400,
+                "day": {
+                    "maxtemp_c": 10.7,
+                    "maxtemp_f": 51.3,
+                    "mintemp_c": 1.7,
+                    "mintemp_f": 35.1,
+                    "avgtemp_c": 5.1,
+                    "avgtemp_f": 41.3,
+                    "maxwind_mph": 7.8,
+                    "maxwind_kph": 12.6,
+                    "totalprecip_mm": 0.0,
+                    "totalprecip_in": 0.0,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 10.0,
+                    "avgvis_miles": 6.0,
+                    "avghumidity": 60.0,
+                    "daily_will_it_rain": 0,
+                    "daily_chance_of_rain": 0,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Sunny",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                        "code": 1000
+                    }
+                },
+                "astro": {
+                    "is_moon_up": 1,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    }
+                ]
+            },
+            {
+                "date": "2023-02-09",
+                "date_epoch": 1675900800,
+                "day": {
+                    "maxtemp_c": 10.7,
+                    "maxtemp_f": 51.3,
+                    "mintemp_c": 2.3,
+                    "mintemp_f": 36.1,
+                    "avgtemp_c": 5.6,
+                    "avgtemp_f": 42.1,
+                    "maxwind_mph": 6.3,
+                    "maxwind_kph": 10.1,
+                    "totalprecip_mm": 0.3,
+                    "totalprecip_in": 0.01,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 10.0,
+                    "avgvis_miles": 6.0,
+                    "avghumidity": 66.0,
+                    "daily_will_it_rain": 1,
+                    "daily_chance_of_rain": 88,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Patchy rain possible",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+                        "code": 1063
+                    }
+                },
+                "astro": {
+                    "is_moon_up": 1,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    }
+                ]
+            },
+            {
+                "date": "2023-02-10",
+                "date_epoch": 1675987200,
+                "day": {
+                    "maxtemp_c": 8.7,
+                    "maxtemp_f": 47.7,
+                    "mintemp_c": 2.5,
+                    "mintemp_f": 36.5,
+                    "avgtemp_c": 5.1,
+                    "avgtemp_f": 41.2,
+                    "maxwind_mph": 9.6,
+                    "maxwind_kph": 15.5,
+                    "totalprecip_mm": 0.0,
+                    "totalprecip_in": 0.0,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 10.0,
+                    "avgvis_miles": 6.0,
+                    "avghumidity": 72.0,
+                    "daily_will_it_rain": 0,
+                    "daily_chance_of_rain": 0,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Partly cloudy",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+                        "code": 1003
+                    }
+                },
+                "astro": {
+                    "is_moon_up": 1,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    }
+                ]
+            },
+            {
+                "date": "2023-02-11",
+                "date_epoch": 1676073600,
+                "day": {
+                    "maxtemp_c": 12.8,
+                    "maxtemp_f": 55.0,
+                    "mintemp_c": 3.4,
+                    "mintemp_f": 38.1,
+                    "avgtemp_c": 7.1,
+                    "avgtemp_f": 44.7,
+                    "maxwind_mph": 6.9,
+                    "maxwind_kph": 11.2,
+                    "totalprecip_mm": 0.0,
+                    "totalprecip_in": 0.0,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 8.1,
+                    "avgvis_miles": 5.0,
+                    "avghumidity": 86.0,
+                    "daily_will_it_rain": 0,
+                    "daily_chance_of_rain": 0,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Partly cloudy",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+                        "code": 1003
+                    }
+                },
+                "astro": {
+                    "is_moon_up": 1,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    },
+                    {
+                        "condition": {
+                            
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
