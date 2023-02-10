@@ -1,5 +1,5 @@
 import React from "react";
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useReducer } from "react";
 import { getWeatherByName } from "../utils/services";
 
 const cityReducer = (state, action) => {
@@ -15,10 +15,7 @@ const CityContext = createContext();
 
 export const CityContextProvider = ({ children }) => {
   const data = () =>
-    getWeatherByName("London").then(res => { 
-      console.log(res)
-      return res
-    })
+    getWeatherByName("London").then(res => res)
   const [city, dispatch] = useReducer(cityReducer, '', data) 
 
   return (

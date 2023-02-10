@@ -6,3 +6,10 @@ export const getWeatherByName = async (city) => {
   console.log(res.data)
   return res.data
 }
+
+export const getWeatherByPosition = async (pos) => {
+  const res = await axios
+    .get(`https://cors-anywhere.herokuapp.com/http://api.weatherapi.com/v1/forecast.json?key=cd4757a4780e45aa877120505230702&q=${pos}&days=5&aqi=no&alerts=no`)
+  console.log(res.data)
+  return res.data
+}

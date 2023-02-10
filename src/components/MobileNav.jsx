@@ -40,7 +40,6 @@ const MobileNav = ({ state, setState }) => {
           value={cityInput}
           onChange={(e) => {
             setCityInput(e.target.value)
-            console.log(e.target.value)
           }}
         />
         <button
