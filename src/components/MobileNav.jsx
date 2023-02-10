@@ -1,15 +1,23 @@
-import axios from "axios";
-import React, { useState } from "react";
-
-const baseUrl = `http://api.weatherapi.com/v1/forecast.json?key=cd4757a4780e45aa877120505230702&q=${location}&days=5&aqi=no&alerts=no`;
+import React, { useContext, useEffect, useState } from "react";
+import { useQuery } from "react-query";
+import CityContext from "../contexts/CityContext";
+import { getWeatherByName } from "../utils/services";
 
 const MobileNav = ({ state, setState }) => {
-  const [city, setCity] = useState("London");
+  const [cityInput, setCityInput] = useState("");
+  const [fCity, setFCity] = useState("");
+  const [city, dispatch] = useContext(CityContext);
 
-  const getCity = (city) => axios.get(baseUrl).then((res) => { 
-    setCity(res)
-    console.log(res)
-   });
+  const onClick = () => {
+    setFCity(cityInput);
+    setCityInput('')
+  };
+
+  useEffect(() => {
+    getWeatherByName(fCity).then((res) =>
+      dispatch({ type: "SET_CITY", city: res })
+    );
+  }, [fCity]);
 
   return (
     <nav
@@ -29,11 +37,19 @@ const MobileNav = ({ state, setState }) => {
           type="text"
           className="w-auto bg-transparent border border-slate-400 p-3 flex-grow pl-6 text-xs"
           placeholder="Search for loaction"
+          value={cityInput}
+          onChange={(e) => {
+            setCityInput(e.target.value)
+            console.log(e.target.value)
+          }}
         />
         <button
-          type="button"
+          type="submit"
           className="text-xs bg-indigo-600 px-6 py-3 font-bold"
-          onClick={setCity}
+          onClick={(e) => {
+            e.preventDefault();
+            onClick();
+          }}
         >
           Search
         </button>

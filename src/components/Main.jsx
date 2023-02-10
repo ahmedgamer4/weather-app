@@ -1,14 +1,22 @@
-import React, { useContext } from "react";
-import { useQuery } from "react-query";
-import data from "../../data.json";
-import { WeatherContext } from "../WeatherContext";
+import React, { useContext, useEffect, useState } from "react";
+import { useQuery, useQueryClient } from "react-query";
+import { getWeatherByName } from "../utils/services";
+import { WeatherContext } from "../contexts/WeatherContext";
+import CityContext from "../contexts/CityContext";
 
 const Main = () => {
   const [degree, dispatch] = useContext(WeatherContext)
+  const [data, _] = useContext(CityContext)
 
-  const query = useQuery('city', () => data)
-  if (query.isLoading) return
-  const city = query.data
+  // const query = useQuery('city', () => data, {
+   
+  // })
+  const query = useQuery({
+    queryKey: ['city', data],
+    queryFn: () => data,
+  })
+  console.log(query.data)
+  if (query.isLoading) return <div>Loading....</div>
 
   return (
     <div className="bg-slate-900 text-white flex-grow flex flex-col gap-8 px-20 py-7">
@@ -18,9 +26,9 @@ const Main = () => {
       </section>
 
       <section className="flex flex-wrap gap-4">
-        {city.forecast.forecastday.map((day) => (
+        {query.data.forecast.forecastday.map((day) => (
           <div
-            key={city.forecast.forecastday.indexOf(day)}
+            key={query.data.forecast.forecastday.indexOf(day)}
             className="w-32 p-4 bg-slate-800 gap-3 flex flex-col"
           >
             <p className="text-sm text-gray-200">{day.date}</p>
@@ -44,20 +52,20 @@ const Main = () => {
           <div className="flex flex-col items-center gap-4 bg-slate-800 p-8">
             <h2 className="text-gray-300 text-sm">Wind status</h2>
             <h1 className="font-bold text-4xl">
-              {city.current.wind_mph} <span className="font-thin">mph</span>
+              {query.data.current.wind_mph} <span className="font-thin">mph</span>
             </h1>
-            <div className="text-gray-300">{city.current.wind_dir}</div>
+            <div className="text-gray-300">{query.data.current.wind_dir}</div>
           </div>
 
           <div className="flex flex-col items-center gap-4 bg-slate-800 p-8">
             <h2 className="text-gray-300 text-sm">Humdity</h2>
             <h1 className="font-bold text-5xl">
-              {city.current.humidity}{" "}
+              {query.data.current.humidity}{" "}
               <span className="font-thin text-2xl">&#37;</span>
             </h1>
             <div className="rounded-full w-full bg-gray-500 h-4 mt-3">
               <div
-                className={`rounded-full w-[${city.current.humidity.toString()}%] h-4 bg-yellow-400`}
+                className={`rounded-full w-[${query.data.current.humidity.toString()}%] h-4 bg-yellow-400`}
               ></div>
             </div>
           </div>
@@ -65,7 +73,7 @@ const Main = () => {
           <div className="flex flex-col items-center gap-4 bg-slate-800 p-8">
             <h2 className="text-gray-300 text-sm">Visibility</h2>
             <h1 className="font-bold text-5xl">
-              {city.current.vis_miles}{" "}
+              {query.data.current.vis_miles}{" "}
               <span className="font-thin text-3xl">miles</span>
             </h1>
           </div>
@@ -73,7 +81,7 @@ const Main = () => {
           <div className="flex flex-col items-center gap-4 bg-slate-800 p-8">
             <h2 className="text-gray-300 text-sm">Air Pressure</h2>
             <h1 className="font-bold text-5xl">
-              {city.current.pressure_mb}{" "}
+              {query.data.current.pressure_mb}{" "}
               <span className="font-thin text-3xl">mb</span>
             </h1>
           </div>
